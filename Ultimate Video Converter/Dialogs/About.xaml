@@ -1,0 +1,74 @@
+﻿<Window
+    x:Class="About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Window1"
+    Height="181"
+    Width="401"
+    WindowStyle="None"
+    WindowStartupLocation="CenterOwner"
+    ResizeMode="NoResize">
+    <Grid>
+        <Border
+            BorderBrush="Black"
+            BorderThickness="5"
+            Name="Border2">
+        </Border>
+        <TextBlock
+            Name="TextBox1"
+            Margin="106,58,12,39"
+            Text="Ultimate Video Converter is a free video converter made by AppsForFree."
+            TextWrapping="Wrap"
+            IsEnabled="True"
+            Background="White" />
+        <Image
+            Height="80"
+            Name="Image2"
+            Stretch="Fill"
+            Width="80"
+            Source="/Ultimate%20Video%20Converter;component/Images/UltimateVideoConverter.ico"
+            Margin="20,50,0,0"
+            VerticalAlignment="Top"
+            HorizontalAlignment="Left" />
+        <Border
+            Background="Black"
+            BorderBrush="Black"
+            BorderThickness="1"
+            Height="32"
+            Name="Border1"
+            VerticalAlignment="Top">
+            <Image
+                Height="20"
+                HorizontalAlignment="Left"
+                Margin="5,5,5,5"
+                Name="Image1"
+                Source="/Images/UltimateVideoConverter.ico"
+                VerticalAlignment="Top"
+                Width="20" />
+        </Border>
+        <Label
+            Content="About"
+            FontFamily="Segoe UI"
+            FontSize="10"
+            FontWeight="Bold"
+            Foreground="#FFFF8B00"
+            Height="26"
+            HorizontalAlignment="Left"
+            Margin="32,3,0,0"
+            Name="Label1"
+            VerticalAlignment="Top" />
+        <TextBlock
+            FontFamily="Segoe UI"
+            FontSize="10"
+            FontWeight="Bold"
+            Foreground="#FFFF8B00"
+            Height="20"
+            HorizontalAlignment="Right"
+            Margin="0,6,12,0"
+            Name="lblQuit"
+            VerticalAlignment="Top"><Hyperlink
+                FontStyle="Normal"
+                Foreground="#FFFF8B00"
+                Name="hypClose">OK</Hyperlink></TextBlock>
+    </Grid>
+</Window>

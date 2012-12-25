@@ -1,0 +1,13 @@
+﻿<Window x:Class="Checker"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Checking for Updates" WindowStyle="None" WindowStartupLocation="CenterOwner"  ShowInTaskbar="False" ResizeMode="NoResize" VerticalAlignment="Center" HorizontalAlignment="Center" MaxWidth="300" MaxHeight="90" MinWidth="300" MinHeight="90">
+    <Grid HorizontalAlignment="Stretch">
+        <Border BorderBrush="Black" BorderThickness="5" Name="Border2" />
+        <ProgressBar Name="ProgressBar1" Margin="32,0,35,17" IsIndeterminate="True" Height="23" VerticalAlignment="Bottom" />
+        <Border Background="Black" BorderBrush="Black" BorderThickness="1" Name="Border1" Height="32" VerticalAlignment="Top">
+            <Image Height="20" HorizontalAlignment="Left" Margin="5,5,5,5" Name="Image1" Source="/Images/UltimateVideoConverter.ico" VerticalAlignment="Top" Width="20" />
+        </Border>
+        <Label Content="Checking For FFmpeg Updates" FontFamily="Segoe UI" FontSize="10" FontWeight="Bold" Foreground="#FFFF8B00" Height="26" HorizontalAlignment="Left" Margin="32,6,0,0" Name="Label1" VerticalAlignment="Top" />
+    </Grid>
+</Window>

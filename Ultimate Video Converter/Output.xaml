@@ -1,0 +1,22 @@
+﻿<Window x:Class="Output"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="Output" Height="300" Width="800" Name="Output" ResizeMode="CanMinimize" WindowStyle="None" WindowStartupLocation="CenterScreen" Background="#FF393939" Icon="Images/UltimateVideoConverter.ico">
+    <Grid>
+        <Border BorderBrush="Black" BorderThickness="5" HorizontalAlignment="Stretch" Name="brdrForm" VerticalAlignment="Stretch" Margin="0" Background="#FF393939"></Border>
+        <RichTextBox Height="349" HorizontalAlignment="Left" Name="TextBlock1" VerticalAlignment="Top" Visibility="Hidden" Margin="0,1,0,0" IsReadOnly="True" VerticalScrollBarVisibility="Auto" />
+        <Button Content="vv Show Details vv" Height="30" HorizontalAlignment="Left" Margin="12,0,0,156" Name="DetailsButton" VerticalAlignment="Bottom" Width="154" Background="#FF393939" Foreground="White" />
+        <Button Content="Cancel" Height="30" HorizontalAlignment="Left" Margin="295,0,0,156" Name="Cancel" VerticalAlignment="Bottom" Width="60" Background="#FF393939" Foreground="White" />
+        <Label Content="Label" Height="28" HorizontalAlignment="Left" Margin="439,0,0,158" Name="lblInd" VerticalAlignment="Bottom" Background="#FF393939" Foreground="White" />
+        <Label Content="Label" Height="28" HorizontalAlignment="Left" Margin="597,0,0,156" Name="lblInd2" VerticalAlignment="Bottom" Background="#FF393939" Foreground="White" />
+        <Button Content="Cancel All" Height="30" HorizontalAlignment="Left" Margin="373,0,0,156" Name="CancelAll" VerticalAlignment="Bottom" Width="60" Background="#FF393939" Foreground="White" />
+        <Label Content="Label" Height="28" HorizontalAlignment="Left" Margin="702,0,0,207" Name="LabelTotal" VerticalAlignment="Bottom" Background="#FF393939" Foreground="White" />
+        <ProgressBar Height="21" HorizontalAlignment="Left" Margin="117,0,0,211" Name="ProgressBar2" VerticalAlignment="Bottom" Width="579" />
+        <Border Background="Black" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Stretch" Margin="0" Name="Border1" VerticalAlignment="Top">
+            <Image Height="20" HorizontalAlignment="Left" Margin="5,5,5,5" Name="Image1" Source="/Images/UltimateVideoConverter.ico" VerticalAlignment="Top" Width="20" />
+        </Border>
+        <Label Content="Details" FontFamily="Segoe UI" FontSize="10" FontWeight="Bold" Foreground="#FFFF8B00" Height="28" HorizontalAlignment="Left" Margin="36,1,0,0" Name="Label1" VerticalAlignment="Top" />
+        <Label Content="Total Percentage" Height="28" HorizontalAlignment="Left" Margin="15,0,0,207" Name="Label2" VerticalAlignment="Bottom" Background="#FF393939" Foreground="White" />
+        <ListView Background="White" Foreground="Black" Height="133" Name="ListView1" Margin="9,0,9,12" VerticalAlignment="Bottom" />
+    </Grid>
+</Window>

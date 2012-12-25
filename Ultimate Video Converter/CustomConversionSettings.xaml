@@ -1,0 +1,58 @@
+﻿<Window x:Class="CustomConversionSettings"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    Title="CustomConversionSettings" Height="408" Width="568" Name="CustomConversion" WindowStartupLocation="CenterOwner" WindowStyle="None" ResizeMode="NoResize" Background="#FF393939">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="32*" />
+            <RowDefinition Height="344*" />
+        </Grid.RowDefinitions>
+        <Border BorderBrush="Black" BorderThickness="5" HorizontalAlignment="Stretch" Name="Border2" Grid.RowSpan="2"></Border>
+        <TabControl Name="TabControl1" VerticalAlignment="Stretch" Grid.Row="1" Margin="5,0,5,5" Background="#00000000">
+            <TabItem Header="Container" Name="TabItem1">
+                <Grid>
+                    <ComboBox Height="25" HorizontalAlignment="Left" Margin="323,130,0,0" Name="cboxExtension" VerticalAlignment="Top" Width="136" Foreground="Black" />
+                    <Label Content="Extension" Foreground="White" HorizontalAlignment="Left" Margin="360,92,0,0" Name="lblExtension" Height="32" VerticalAlignment="Top" />
+                    <ComboBox Height="25" HorizontalAlignment="Left" Margin="70,130,0,0" Name="cboxContainer" VerticalAlignment="Top" Width="160" Foreground="Black" />
+                    <Label Content="Container" Foreground="White" HorizontalAlignment="Left" Margin="115,92,0,0" Name="lblContainer" Height="32" VerticalAlignment="Top" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Video" Name="TabItem2">
+                <Grid>
+                    <ComboBox Height="25" HorizontalAlignment="Left" Margin="33,90,0,0" Name="cboxVideoCodec" VerticalAlignment="Top" Width="120" Foreground="Black" />
+                    <Label Content="Video Codec" Foreground="White" HorizontalAlignment="Left" Margin="47,63,0,0" Name="lblVideoCodec" Height="24" VerticalAlignment="Top" />
+                    <ComboBox Height="25" HorizontalAlignment="Left" Margin="33,185,0,0" Name="cboxFrameRate" VerticalAlignment="Top" Width="120" Foreground="Black" />
+                    <Label Content="Frame Rate" Foreground="White" HorizontalAlignment="Left" Margin="54,156,0,0" Name="lblFrameRate" Height="23" VerticalAlignment="Top" />
+                    <ComboBox Height="25" HorizontalAlignment="Left" Margin="218,90,0,0" Name="cboxSize" VerticalAlignment="Top" Width="120" Foreground="Black" />
+                    <Label Content="Size" Foreground="White" HorizontalAlignment="Left" Margin="259,60,0,0" Name="lblSize" Height="24" VerticalAlignment="Top" />
+                    <TextBox Height="25" HorizontalAlignment="Left" Margin="413,90,0,0" Name="txtWidth" VerticalAlignment="Top" Width="67" Foreground="Black" />
+                    <TextBox Height="25" HorizontalAlignment="Left" Margin="413,185,0,0" Name="txtHeight" VerticalAlignment="Top" Width="67" Foreground="Black" />
+                    <TextBox Height="25" HorizontalAlignment="Left" Margin="218,185,0,0" Name="cboxVideoBitrate" VerticalAlignment="Top" Width="120" Foreground="Black" />
+                    <Label Content="Video Bitrate" Foreground="White" HorizontalAlignment="Left" Margin="239,156,0,0" Name="lblVideoBitrate" Height="23" VerticalAlignment="Top" />
+                    <Label Content="Height" Foreground="White" Height="27" HorizontalAlignment="Left" Margin="419,156,0,0" Name="lblHeight" VerticalAlignment="Top" />
+                    <Label Content="Width" Foreground="White" Height="27" Margin="419,60,0,0" Name="lblWidth" HorizontalAlignment="Left" Width="42" VerticalAlignment="Top" />
+                </Grid>
+            </TabItem>
+            <TabItem Header="Audio" Name="tabAudio">
+                <Grid>
+                    <ComboBox Height="25" HorizontalAlignment="Left" Margin="99,89,0,0" Name="cboxAudioCodec" VerticalAlignment="Top" Width="120" Foreground="Black" />
+                    <Label Content="Audio Codec" Foreground="White" HorizontalAlignment="Left" Margin="125,60,0,0" Name="lblAudioCodec" Height="23" VerticalAlignment="Top" />
+                    <ComboBox Height="25" HorizontalAlignment="Left" Margin="99,184,0,0" Name="cboxChannels" VerticalAlignment="Top" Width="120" Foreground="Black">
+                        <ComboBoxItem Content="1 (Mono)" />
+                        <ComboBoxItem Content="2 (Stereo)" />
+                    </ComboBox>
+                    <Label Content="Channels" ContentStringFormat="" Foreground="White" HorizontalAlignment="Left" Margin="125,154,0,0" Name="lblChannels" Height="26" VerticalAlignment="Top" />
+                    <ComboBox Height="25" HorizontalAlignment="Left" Margin="314,89,0,0" Name="cboxAudioBitrate" VerticalAlignment="Top" Width="120" Foreground="Black" />
+                    <Label Content="Audio Bitrate" Foreground="White" HorizontalAlignment="Left" Margin="337,60,0,0" Name="lblAudioBitrate" Height="23" VerticalAlignment="Top" />
+                    <ComboBox Height="25" HorizontalAlignment="Left" Margin="314,184,0,0" Name="cboxSampleRate" VerticalAlignment="Top" Width="120" Foreground="Black" />
+                    <Label Content="Sample Rate" Foreground="White" HorizontalAlignment="Left" Margin="337,154,0,0" Name="lblSampleRate" Height="24" VerticalAlignment="Top" />
+                </Grid>
+            </TabItem>
+        </TabControl>
+        <Border Background="Black" BorderBrush="Black" BorderThickness="1" HorizontalAlignment="Stretch" Name="Border1" VerticalAlignment="Top">
+            <Image Height="20" HorizontalAlignment="Left" Margin="5,5,5,5" Name="Image1" Source="/Images/UltimateVideoConverter.ico" VerticalAlignment="Top" Width="20" />
+        </Border>
+        <Label Content="Custom Options" FontFamily="Segoe UI" FontSize="10" FontWeight="Bold" Foreground="#FFFF8B00" Name="Label1" Margin="32,4,425,2" />
+        <TextBlock FontFamily="Segoe UI" FontSize="10" FontWeight="Bold" Foreground="#FFFF8B00" Height="20" HorizontalAlignment="Right" Margin="0,6,12,0" Name="lblQuit" VerticalAlignment="Top"><Hyperlink FontStyle="Normal" Foreground="#FFFF8B00" Name="hypClose">Close</Hyperlink></TextBlock>
+    </Grid>
+</Window>
